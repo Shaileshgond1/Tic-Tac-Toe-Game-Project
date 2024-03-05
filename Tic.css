@@ -1,189 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-    color: white;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: 10px;
-    font-size: 5vmin;
+body {
+  background-color: #548687;
+  text-align: center;
 }
 
-.bar {
-    height: 70px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-}
+.container {
+  height: 70vh;
+  display: flex;
 
-
-.two {
-    display: flex;
-    align-items: center;
-    left: 12px;
-    justify-content: flex-end;
-    position: relative;
-    left: 110px;
-    transition: 1s ease-in;
-}
-
-
-
-.two input {
-    height: 30px;
-    width: 163px;
-    outline: none;
-    border-radius: 8px;
-    padding: 5px;
-}
-
-#btn {
-    font-size: 16px;
-    border-radius: 12px;
-    color: white;
-    outline: none;
-    background-color: none;
-    border: none;
-    height: 30px;
-    color: black;
-    width: 72px;
-    margin-left: 5px;
-}
-
-
-.cards {
-    height: 42vh;
-    width: 44vw;
-
-    display: flex;
-    justify-content: space-between;
-    margin-left: 58vmin;
-    margin-top: 15vh;
-    position: relative;
-    background-color: #315d75;
-    border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vh;
+  left: 8vh;
 
 }
 
-.cards #sun {
-
-    font-size: 9vmin;
-    position: absolute;
-    left: 251px;
-    top: 51px;
+.game {
+  height: 50vmin;
+  width: 50vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
 }
 
-.cards h1 {
-    position: absolute;
-    top: 0;
-    margin: 5px;
-    font-size: 21px;
-}
-
-#location {
-    position: absolute;
-    top: 37px;
-    left: 20px;
-    color: white;
-}
-
-#loca {
-    position: absolute;
-    top: 34px;
-    left: 35px;
-    color: white;
-}
-
-#lone {
-    position: absolute;
-    top: 151px;
-    left: 98px;
-    font-size: 13px;
-    color: white;
-    font-size: 21px;
-}
-
-#ltemp {
-    position: absolute;
-    top: 115px;
-    left: 252px;
-    font-size: 24px;
-    color: white;
-
-}
-
-#ltwo {
-    position: absolute;
-    top: 152px;
-    left: 383px;
-    font-size: 13px;
-    color: white;
-    font-size: 21px;
-}
-
-p {
-    position: absolute;
-    top: 182px;
-    left: 131px;
-    font-size: 23px;
-    color: white;
-}
-
-p1 {
-    position: absolute;
-    top: 182px;
-    left: 418px;
-    font-size: 23px;
-    color: white;
-}
-
-
-table {
-    width: 90%;
-    margin-top: 30px;
-    font-size: larger;
-    border: 1px solid black;
-    margin-left: 52px;
-
-}
-
-table th {
-
-    height: 25px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    border-bottom: 1px solid rgb(15, 1, 1);
-}
-
-table td {
-    text-align: center;
-    border-bottom: 1px solid rgb(221, 216, 216);
-    padding-top: 10px;
-    padding-bottom: 5px;
+.box {
+  height: 13vmin;
+  width: 13vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.1);
+  font-size: 8vmin;
+  color: rgb(192, 7, 7);
+  background-color: rgb(255, 246, 113);
+  ;
 }
 
 h2 {
-    position: relative;
-    left: 46px;
-    top: 18px;
+  position: relative;
+  display: block;
+  right: 1vw;
+  top: 40vh;
+  font-size: 45px;
 }
 
-@media screen and (max-width: 900px) {
-    .two {
-        margin-right: 50px;
-    }
+h1 {
+  position: fixed;
+  top: 5px;
+  left: 479px;
+  font-size: 51px;
 }
 
-@media screen and (max-width: 480px) {
-    .two input {
-        width: 100px;
-        height: 20px;
-    }
+p {
+  position: relative;
+  display: block;
+  right: 1vw;
+  top: 40vh;
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(255, 255, 253);
+}
+
+#reset {
+  height: 40px;
+  width: 75px;
+  font-size: 16px;
+  background-color: #191913;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  position: relative;
+  top: 182px;
+  right: 183px;
+}
+
+#newgame {
+  height: 34px;
+  width: 82px;
+  font-size: 14px;
+  background-color: #191913;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  position: relative;
+  top: 43vh;
+}
+
+.hide {
+  display: none;
+}
+
+.containerhide {
+  display: none;
 }
